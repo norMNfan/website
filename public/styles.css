@@ -1,13 +1,91 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: Inconsolata,monospace;
   font-size: 20px;
+  box-sizing: border-box;
 }
 
 body {
   border-top: 5px solid black;
   border-bottom: 5px solid orange;
+  font: inherit;
 }
 
-a {
+.content {
+  margin: 0 auto;
+  max-width: 74rem;
+  padding: 6rem 4rem;
+  width: 100%;
+  font-size: 20px;
+
+  display:block;
+}
+
+header, footer {
+  background-color: #e5e5e5;
+}
+
+.path {
+  margin: 0 auto;
+}
+
+.path a, .path a {
+  border-bottom: 2px solid transparent;
+  transition: border-color .3s ease;
+  color: #000;
+  text-decoration: none;
+}
+
+.path a:hover, .path a:hover {
+  border-color:#000;
+  color:#000;
+  text-decoration: none;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.text a {
   border-bottom: 2px solid black;
+  text-decoration: none;
+  transition: all .3s ease;
+  color: #000;
+}
+
+.text a:hover {
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  color: #757575;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.box{
+  margin-bottom: 6rem;
+  padding: 0 2rem;
+  position: relative;
+  width: 33.333333%;
+}
+
+.figure-wrapper {
+  justify-content:center;
+}
+
+@media screen and (max-width: 640px) {
+  * {
+    background-color: red;
+  }
+  .box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 192px) {
+  * {
+    background-color:red;
+  }
 }

@@ -1,0 +1,141 @@
+* {
+  font-family: Inconsolata,monospace;
+  font-size: 20px;
+}
+
+body {
+  border-top: 5px solid black;
+  border-bottom: 5px solid orange;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 74rem;
+  padding: 4rem 2rem;
+  width: 100%;
+  font-size: 20px;
+  display:block;
+}
+
+.text {
+  font-size: 20px;
+
+}
+
+.text a {
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  transition: all .3s ease;
+  color: #000;
+}
+
+.text a:hover {
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  color: #757575;
+}
+
+header, footer {
+  background-color: #e5e5e5;
+}
+
+.path {
+  margin: 0 auto;
+}
+
+.path a, .path a {
+  border-bottom: 2px solid transparent;
+  transition: border-color .3s ease;
+  color: #000;
+  text-decoration: none;
+}
+
+.path a:hover, .path a:hover {
+  border-color:#000;
+  color:#000;
+  text-decoration: none;
+}
+
+.boxes {
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  list-style-type: none;
+}
+
+.boxes .box {
+	justify-content: flex-start;
+	margin-bottom: 6rem;
+	padding: 0 2rem;
+	position: relative;
+	width: 33.333333%;
+
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+}
+
+.boxes .box h3, .boxes .box h3 {
+	margin-top: 1.5rem;
+	font-size:16px;
+}
+
+.boxes .box a {
+  display: block;
+  width: 100%;
+}
+
+.boxes .box img {
+	display:block;
+	width:100%;
+	height:;
+	max-width:500px;
+	position: absolute;
+	top: 0;
+}
+
+.image_controller {
+	position: relative;
+}
+
+.aspect-ratio-holder {
+	height: 0;
+    width: 100%;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.rotate270 {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+@media screen and (max-width: 724px) {
+	.boxes .box {
+    	width:100%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width:725px){
+	.boxes .box {
+    	width:50%;
+    }
+}
