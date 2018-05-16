@@ -6,6 +6,8 @@ app.set('port', (process.env.PORT || 80));
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+console.log(__dirname);
+
 app.get('/', function(req, res) {
 	res.sendFile(__dirname + "/views/home.html");
 });
@@ -18,12 +20,12 @@ app.get('/Travel', function(req, res) {
 	res.sendFile(__dirname + "/views/travel.html");
 });
 
-app.get('/Travel/Germany', function(req, res) {
-	res.sendFile(__dirname + "/views/germany.html");
-});
-
 app.get('/Travel/Philippines', function(req, res) {
 	res.sendFile(__dirname + "/views/philippines.html");
+});
+
+app.get('/Travel/Germany', function(req, res) {
+	res.sendFile(__dirname + "/views/germany.html");
 });
 
 app.get('/Books', function(req, res) {
