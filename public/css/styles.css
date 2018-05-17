@@ -35,6 +35,10 @@ body {
   color: #757575;
 }
 
+.text p, .text p a, .text h1 {
+  font-family: Roboto, sans-serif;
+}
+
 .chunk {
   font-size: 16px;
   padding-bottom:2rem;
@@ -117,6 +121,56 @@ img {
 .full {
 	width:100%;
 	height:auto;
+}
+
+.image_two_set {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image_two_set .left{
+  width:50%;
+  height:100%;
+  padding-right: 0.5rem;
+}
+
+.image_two_set .right{
+  width:50%;
+  height:100%;
+  padding-left: 0.5rem;
+}
+
+.image_four_set {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image_four_set .upper_left {
+  width:50%;
+  height:50%;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.image_four_set .upper_right {
+  width:50%;
+  height:50%;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.image_four_set .lower_left {
+  width:50%;
+  height:50%;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.image_four_set .lower_right {
+  width:50%;
+  height:50%;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .rotate90 {
