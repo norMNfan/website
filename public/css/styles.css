@@ -10,6 +10,11 @@ body {
   line-height:1;
 }
 
+.path, .main {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .content {
   margin: 0 auto;
   max-width: 74rem;
