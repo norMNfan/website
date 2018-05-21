@@ -1,6 +1,6 @@
 * {
   font-family: Inconsolata,monospace;
-  font-size: 20px;
+  font-size: 22px;
   box-sizing:border-box;
 }
 
@@ -183,6 +183,11 @@ img {
   justify-content: center;
 }
 
+.image_one_set img {
+  width:100%;
+  height:100%;
+}
+
 .image_two_set {
   display: flex;
   flex-wrap: wrap;
@@ -192,13 +197,13 @@ img {
 .image_two_set .left{
   width:50%;
   height:100%;
-  padding-right: 0.5rem;
+  padding-right: 2%;
 }
 
 .image_two_set .right{
   width:50%;
   height:100%;
-  padding-left: 0.5rem;
+  padding-left: 2%;
 }
 
 .image_four_set {
@@ -276,4 +281,10 @@ img {
 	.boxes .box {
     	width:50%;
     }
+}
+
+@media screen and (max-width: 1920px){
+  body, html,  header, footer {
+      font-size: 18px;
+  }
 }
