@@ -9,17 +9,13 @@ body {
   line-height:1;
 }
 
-.path, .main {
-  max-width: 1200px;
-  margin: auto;
-}
-
 .content {
   margin: 0 auto;
   padding: 3rem 2rem;
   width: 100%;
   font-size: 20px;
   display:block;
+  max-width:1200px;
 }
 
 .text {
@@ -179,6 +175,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     z-index: 2;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 img {
     max-width: 100%;
 }
@@ -192,6 +194,7 @@ img {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom:1rem;
 }
 
 .image_one_set img {
@@ -251,7 +254,7 @@ img {
   padding-top: 0.5rem;
 }
 
-.image_four_set p, .image_two_set p, .image_one_set p{
+.image_four_set p, .image_two_set p, .image_one_set p, .chunk .caption{
   text-align: center;
   padding-top:2rem;
   padding-bottom:2rem;
