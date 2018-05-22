@@ -1,6 +1,5 @@
 * {
   font-family: Inconsolata,monospace;
-  font-size: 22px;
   box-sizing:border-box;
 }
 
@@ -17,7 +16,6 @@ body {
 
 .content {
   margin: 0 auto;
-  max-width: 74rem;
   padding: 3rem 2rem;
   width: 100%;
   font-size: 20px;
@@ -27,6 +25,7 @@ body {
 .text {
   font-size: 20px;
   padding-bottom:2rem;
+  max-width:800px;
 }
 
 .text a {
@@ -42,7 +41,7 @@ body {
   color: #757575;
 }
 
-.text p, .text p a, .text h1 {
+.text p, .text p a, .text h1, .chunk .text, .chunk .text a {
   font-family: Roboto, sans-serif;
 }
 
@@ -58,6 +57,11 @@ body {
   color: #000;
 }
 
+.chunk p, .chunk h1 {
+  max-width:800px;
+  margin-bottom:1rem;
+}
+
 .section .path {
   margin-bottom: 2rem;
 }
@@ -69,9 +73,10 @@ header, footer {
 .path {
     padding-left: 3.6rem;
     text-indent: -3.6rem;
+    font-size:1.25rem;
 }
 
-h1, h2 {
+h1, h2, {
     font-family: Inconsolata,monospace;
     font-size: 1.25rem;
 }
@@ -103,6 +108,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: #222;
     text-decoration: none;
     transition: all .3s ease;
+    font-size:1.25rem;
 }
 
 .boxes .box h3 a:hover, .path a:hover, article .info a:hover, article h4 a:hover {
@@ -250,6 +256,7 @@ img {
   padding-top:2rem;
   padding-bottom:2rem;
   justify-content: flex-start;
+  font-size:20px;
 }
 
 .rotate90 {
