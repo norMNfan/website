@@ -257,7 +257,7 @@ img {
 .image_four_set p, .image_two_set p, .image_one_set p, .chunk .caption{
   text-align: center;
   padding-top:2rem;
-  padding-bottom:2rem;
+  padding-bottom:1rem;
   justify-content: flex-start;
   font-size:20px;
 }

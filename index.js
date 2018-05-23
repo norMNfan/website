@@ -83,12 +83,6 @@ app.use (function (req, res, next) {
         }
 });
 
-/*
-var server = app.listen(port, function() {
-	console.log("Node app is running at localhost:" + app.get('port'));
-});
-*/
-
 https.createServer(options, app).listen(HTTPS_PORT).on('listening', function() {
   return console.log("HTTP to HTTPS redirect app launched.");
 });
