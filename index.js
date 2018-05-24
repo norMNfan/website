@@ -11,7 +11,7 @@ var HTTPS_PORT = 443;
 var app = express();
 
 //Set up port connection
-app.set('port', (process.env.PORT || HTTP_PORT));
+var ports = (process.env.PORT || process.env.VCAP_APP_PORT || HTTPS_PORT || HTTP_PORT);
 
 app.all('/*', function(req, res, next) {
   if (/^http$/.test(req.protocol)) {
@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('static'));
 
 // Options for HTTPS
-const options = {
+const credentials = {
     cert: fs.readFileSync('./sslcert/fullchain.pem'),
     key: fs.readFileSync('./sslcert/privkey.pem')
 };
@@ -71,18 +71,8 @@ app.get('/Projects/RayTracer', function(req, res){
 	res.sendFile(__dirname + "/views/home.html");
 });
 
-app.enable('trust proxy');
+var httpServer = http.createServer(app);
+var httpsServer = https.createServer(credentials, app);
 
-app.use (function (req, res, next) {
-        if (req.secure) {
-                // request was via https, so do no special handling
-                next();
-        } else {
-                // request was via http, so redirect to https
-                res.redirect('https://' + req.headers.host + req.url);
-        }
-});
-
-https.createServer(options, app).listen(HTTPS_PORT).on('listening', function() {
-  return console.log("HTTP to HTTPS redirect app launched.");
-});
+httpServer.listen(HTTP_PORT);
+httpsServer.listen(HTTPS_PORT);
