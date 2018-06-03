@@ -194,7 +194,8 @@ img {
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom:1rem;
+  margin-top:1rem;
+  margin-bottom:1rem;
 }
 
 .image_one_set img {
@@ -206,58 +207,62 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top:1rem;
+  margin-bottom:1rem;
 }
 
 .image_two_set .left{
-  width:50%;
+  width:49%;
   height:100%;
-  padding-right: 2%;
+  margin-right: 1%;
 }
 
 .image_two_set .right{
-  width:50%;
+  width:49%;
   height:100%;
-  padding-left: 2%;
+  margin-left: 1%;
 }
 
 .image_four_set {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top:1rem;
+  margin-bottom:1rem;
 }
 
 .image_four_set .upper_left {
-  width:50%;
-  height:50%;
-  padding-right: 0.5rem;
-  padding-bottom: 0.5rem;
+  width:49%;
+  height:49%;
+  margin-right: 1%;
+  margin-bottom: 1%;
 }
 
 .image_four_set .upper_right {
-  width:50%;
-  height:50%;
-  padding-left: 0.5rem;
-  padding-bottom: 0.5rem;
+  width:49%;
+  height:49%;
+  margin-left: 1%;
+  margin-bottom: 1%;
 }
 
 .image_four_set .lower_left {
-  width:50%;
-  height:50%;
-  padding-right: 0.5rem;
-  padding-top: 0.5rem;
+  width:49%;
+  height:49%;
+  margin-right: 1%;
+  margin-top: 1%;
 }
 
 .image_four_set .lower_right {
-  width:50%;
-  height:50%;
-  padding-left: 0.5rem;
-  padding-top: 0.5rem;
+  width:49%;
+  height:49%;
+  margin-left: 1%;
+  margin-top: 1%;
 }
 
 .image_four_set p, .image_two_set p, .image_one_set p, .chunk .caption{
   text-align: center;
-  padding-top:2rem;
-  padding-bottom:1rem;
+  margin-top:2rem;
+  margin-bottom:2rem;
   justify-content: flex-start;
   font-size:20px;
 }
