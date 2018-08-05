@@ -44,23 +44,31 @@ app.get('/', function(req, res) {
 });
 
 app.get('/Projects', function(req, res) {
-	res.sendFile(__dirname + "/views/projects.html");
+	res.sendFile(__dirname + "/views/Projects/projects.html");
 });
 
-app.get('/Projects/RayTracer', function(req, res) {
-	res.sendFile(__dirname + "/views/raytracer.html");
+app.get('/Projects/SongSentimentAnalysis', function(req, res) {
+	res.sendFile(__dirname + "/views/Projects/songsentimentanalysis.html");
+});
+
+app.get('/Projects/EvolutionOfLilWayne', function(req, res) {
+  res.sendFile(__dirname + "/views/Projects/evolutionoflilwayne.html");
 });
 
 app.get('/Travel', function(req, res) {
-	res.sendFile(__dirname + "/views/travel.html");
+	res.sendFile(__dirname + "/views/Travel/travel.html");
+});
+
+app.get('/Travel/HongKong', function(req, res) {
+  res.sendFile(__dirname + "/views/Travel/hongkong.html");
 });
 
 app.get('/Travel/Philippines', function(req, res) {
-	res.sendFile(__dirname + "/views/philippines.html");
+	res.sendFile(__dirname + "/views/Travel/philippines.html");
 });
 
 app.get('/Travel/Germany', function(req, res) {
-	res.sendFile(__dirname + "/views/germany.html");
+	res.sendFile(__dirname + "/views/Travel/germany.html");
 });
 
 app.get('/Books', function(req, res) {

@@ -4,7 +4,7 @@
 	<title>Brian Norlander</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Personal website of Brian Philiip Norlander, Woodbury MN. Brian Norlander likes creating new applications that use data mining and natural language processing algorithms.">
+	<meta name="description" content="Personal website of Brian Norlander, Woodbury MN. Brian Norlander likes creating new applications that use data mining and natural language processing algorithms.">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="shortcut icon" href="img/icons/united-states-of-america-flag-round-icon-16.ico" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -50,14 +50,14 @@
 
 		<div class="boxes">
 			<div class="box">
-				<a href="/Projects/RayTracer">
+				<a href="/Projects/SongSentimentAnalysis">
 					<div class="img_container">
 						<img src="img/RayTracer/BallsRender.jpg">
 					</div>
 				</a>
 				<h3>
-					<a href="/Projects/RayTracer">
-						Ray Tracer
+					<a href="/Projects/SongSentimentAnalysis">
+						Song Sentiment Analysis
 					</a>
 				</h3>
 			</div>
@@ -74,9 +74,7 @@
 		<div class="boxes">
 			<div class="box">
 				<a href="/Travel/Philippines">
-					<div class="img_container">
-						<img src="../img/Philippines/900x600/pineapple_3.jpg">
-					</div>
+					<img class="lazy" src="../img/Philippines/225x150/pineapple_3.jpg" data-src="../img/Philippines/900x600/pineapple_3.jpg" data-srcset="../img/Philippines/Original/pineapple_3.jpg 2x, ../img/Philippines/900x600/pineapple_3.jpg 1x" alt="Philippines">
 				</a>
 				<h3 class="caption">
 					<a href="/Travel/Philippines">
@@ -93,6 +91,15 @@
 				<h3 class="caption">
 					<a href="/Travel/Germany>">
 						Germany-Austria-Switzerland 2017
+					</a>
+				</h3>
+			</div>
+				<a href="/Travel/HongKong">
+					<img class="lazy" src="../img/Philippines/900x600/HK_skyline.jpg" data-src="../img/Philippines/Original/HK_skyline.jpg" data-srcset="../img/HongKong/Original/HK_skyline.jpg 2x, ../img/Philippines/900x600/HK_skyline.jpg 1x" alt="Hong Kong">
+				</a>
+				<h3 class="caption">
+					<a href="/Travel/HongKong>">
+						Hong Kong 2018
 					</a>
 				</h3>
 			</div>
@@ -200,6 +207,33 @@
 			</h3>
 		</div>
     </footer>
+
+    <!-- Lazy image loading -->
+    <script>
+	document.addEventListener("DOMContentLoaded", function() {
+	  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+	  if ("IntersectionObserver" in window) {
+	    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+	      entries.forEach(function(entry) {
+	        if (entry.isIntersecting) {
+	          let lazyImage = entry.target;
+	          lazyImage.src = lazyImage.dataset.src;
+	          lazyImage.srcset = lazyImage.dataset.srcset;
+	          lazyImage.classList.remove("lazy");
+	          lazyImageObserver.unobserve(lazyImage);
+	        }
+	      });
+	    });
+
+	    lazyImages.forEach(function(lazyImage) {
+	      lazyImageObserver.observe(lazyImage);
+	    });
+	  } else {
+	    // Possibly fall back to a more compatible method here
+	  }
+	});
+	</script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
