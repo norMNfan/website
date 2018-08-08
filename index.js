@@ -44,31 +44,31 @@ app.get('/', function(req, res) {
 });
 
 app.get('/Projects', function(req, res) {
-	res.sendFile(__dirname + "/views/Projects/projects.html");
+	res.sendFile(__dirname + "/views/projects.html");
 });
 
 app.get('/Projects/SongSentimentAnalysis', function(req, res) {
-	res.sendFile(__dirname + "/views/Projects/songsentimentanalysis.html");
+	res.sendFile(__dirname + "/views/songsentimentanalysis.html");
 });
 
 app.get('/Projects/EvolutionOfLilWayne', function(req, res) {
-  res.sendFile(__dirname + "/views/Projects/evolutionoflilwayne.html");
+  res.sendFile(__dirname + "/views/evolutionoflilwayne.html");
 });
 
 app.get('/Travel', function(req, res) {
-	res.sendFile(__dirname + "/views/Travel/travel.html");
+	res.sendFile(__dirname + "/views/travel.html");
 });
 
 app.get('/Travel/HongKong', function(req, res) {
-  res.sendFile(__dirname + "/views/Travel/hongkong.html");
+  res.sendFile(__dirname + "/views/hongkong.html");
 });
 
 app.get('/Travel/Philippines', function(req, res) {
-	res.sendFile(__dirname + "/views/Travel/philippines.html");
+	res.sendFile(__dirname + "/views/philippines.html");
 });
 
 app.get('/Travel/Germany', function(req, res) {
-	res.sendFile(__dirname + "/views/Travel/germany.html");
+	res.sendFile(__dirname + "/views/germany.html");
 });
 
 app.get('/Books', function(req, res) {
